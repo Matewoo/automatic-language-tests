@@ -1,2 +1,2 @@
 # automatic-language-tests
-A program that creates language tests based on skills.
+A web program that checks your language skills and then issues the appropriate certificate.
