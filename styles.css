@@ -59,11 +59,15 @@ header .nav-bar a {
     color: #fff;
     border-radius: 10px;
 }
-header .nav-bar a:hover,
+header .nav-bar a:hover:not(.active) {
+    background-color: rgba(130, 103, 230, 0.705);
+}
+
 header .nav-bar .active {
     background-color: #fff;
     color: #2b1055;
 }
+
 .hero {
     position: relative;
     width: 100%;
@@ -78,7 +82,7 @@ header .nav-bar .active {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 100px;
     background: linear-gradient(to top, #0F0218, transparent);
     z-index: 6;
 }
@@ -86,22 +90,58 @@ header .nav-bar .active {
 #text {
     position: absolute;
     color: #fff;
-    white-space: nowrap;
-    font-size: 7.5vw;
+    white-space: normal;
+    font-size: 5.5vw;
     z-index: 0;
     pointer-events: none;
-    letter-spacing: 15px;
+    letter-spacing: 5px;
+    transform: translateY(-50px);
 }
+
+#sub-text {
+    position: absolute;
+    color: #994da8;
+    white-space: normal;
+    font-size: 1vw;
+    z-index: 0;
+    pointer-events: none;
+    letter-spacing: 20px;
+    word-spacing: 15px;
+    transform: translateY(70px);
+}
+
+#sub-sub-text {
+    position: absolute;
+    color: #788FC7;
+    text-decoration: none;
+    white-space: normal;
+    font-size: 1vw;
+    z-index: 0;
+    pointer-events: none;
+    transform: translateY(130px);
+    letter-spacing: 5px;
+    word-spacing: 5px;
+}
+
+#sub-sub-text .gh-link {
+    pointer-events: all;
+    text-decoration: none;
+    font-style: italic;
+    color: #788FC7;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
 #btn {
     text-decoration: none;
     display: inline-block;
     padding: 8px 30px;
-    border-radius: 40px;
+    border-radius: 20px;
     background: #fff;
     color: #2b1055;
     font-size: 1.5em;
     z-index: 4;
-    transform: translateY(150px);
+    transform: translateY(300px);
 }
 .sec {
     position: relative;
